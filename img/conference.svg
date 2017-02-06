@@ -1,0 +1,24 @@
+<svg version="1.1" id="Ð¡Ð»Ð¾Ð¹_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 48 48" enable-background="new 0 0 48 48" xml:space="preserve">
+    <g>
+        <line fill="none" stroke="#37474F" stroke-width="2" x1="23.5" y1="38.5" x2="29" y2="27"></line>
+        <line fill="none" stroke="#37474F" stroke-width="2" x1="34.5" y1="38.5" x2="29" y2="27"></line>
+        <rect x="28" y="6" fill="#37474F" width="2" height="27"></rect>
+    </g>
+    <rect x="15" y="9" fill="#ededed" width="28" height="21"></rect>
+    <g>
+        <path fill="#435862" d="M22,38.5c0-0.828,0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5S24.328,40,23.5,40S22,39.328,22,38.5"></path>
+        <path fill="#435862" d="M33,38.5c0-0.828,0.672-1.5,1.5-1.5s1.5,0.672,1.5,1.5S35.328,40,34.5,40S33,39.328,33,38.5"></path>
+        <rect x="14" y="8" fill="#485d67" width="30" height="4"></rect>
+        <rect x="14" y="29" fill="#485d67" width="30" height="2"></rect>
+    </g>
+    <path fill="#ffc84d" d="M11,14c-2.207,0-4-1.794-4-4c0-2.207,1.793-4,4-4s4,1.793,4,4C15,12.206,13.207,14,11,14"></path>
+    <g>
+        <path fill="#455A64" d="M24,19H11c-1.104,0-2-0.896-2-2s0.896-2,2-2h13c1.104,0,2,0.896,2,2S25.104,19,24,19z"></path>
+        <path fill="#455A64" d="M4,22v7l2.625,1.75L7.5,42h7L16,19c0,0-1.134-4-5-4S4,18.133,4,22"></path>
+    </g>
+    <g>
+        <rect x="35" y="17" fill="#1b81d8" width="3" height="9"></rect>
+        <rect x="31" y="20" fill="#1b81d8" width="3" height="6"></rect>
+        <rect x="27" y="22" fill="#1b81d8" width="3" height="4"></rect>
+    </g>
+</svg>

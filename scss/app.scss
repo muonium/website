@@ -1,0 +1,179 @@
+body{
+
+}
+hr{
+  border-top: 3px solid #ccc;
+}
+.text-center{text-align: center;}
+.mui-layout {
+  background-position: center;
+  background-size: cover;
+  .mdl-layout__header, .mdl-layout__drawer-button {
+    color: white;
+  }
+}
+.mdl-layout__header--transparent.mdl-layout__header--transparent,header{
+  background: rgba(51, 153, 54, 0.5);
+}
+.mdl-layout__drawer{
+  select{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+    width: 70%;
+    margin: 0 auto;
+  }
+}
+header{
+  color: #fff;
+  padding-top: 100px;
+  padding-bottom: 120px;
+  select{
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+  }
+  p{
+    font-weight: bold;
+    font-size: 20px;
+  }
+  .mdl-button{
+    margin: auto 35px;
+  }
+  h3{
+    font-size: 7em;
+    line-height: 100px;
+    font-weight: bolder;
+    padding: 50px;
+    color: #fff;
+  }
+  hr{
+    width: 40px;
+    margin: 20px auto;
+    margin-top: 125px;
+    border-top-color: #fff;
+  }
+}
+.features{
+  background-color: #fff;
+  margin-top: -35px;
+  padding: 80px 0px;
+  section{
+    width: 95%;
+    margin: 0 auto;
+  }
+  b{
+    font-size: 18px;
+  }
+  h3{
+    font-size: 24px;
+    font-weight: bolder;
+    padding-bottom: 0;
+  }
+  hr{
+    width: 40px;
+    margin: 20px auto;
+    margin-bottom: 50px;
+    border-top-color: red;
+  }
+  .mdl-grid{
+    .mdl-cell{
+      text-align: left;
+      padding: 20px;
+    }
+    p{
+      color: #777575;
+    }
+    .description{
+      color: #000;
+      font-size: 20px;
+    }
+    img{
+      float: left;
+      width: 64px;
+      padding: 5px 10px;
+    }
+  }
+}
+.team{
+  background-color: rgba(255, 255, 255, 0.95);
+  color: #000;
+  .mdl-grid{
+    .mdl-cell{
+      hr{
+          margin: 15px 0;
+      }
+    }
+    img{
+      width: 100px;
+      padding: 0px 10px;
+      border-radius: 25px;
+    }
+  }
+  .role{
+    font-weight: bold;
+    font-size: 19px;
+  }
+}
+.achieve{
+  hr{
+    margin-top: 0px;
+    border-top-color: red;
+  }
+  h4{
+    font-weight: bold;
+    font-size: 2em;
+    color: #000;
+  }
+}
+.help{
+  p{
+    font-size: 19px;
+  }
+}
+.donate{
+  background-color: #fff;
+  margin-top: -35px;
+  padding: 80px 0px;
+  .mdl-cell{
+    img{
+      width: 100px;
+      display: block;
+      margin: 0 auto;
+    }
+    span{
+      font-weight: bold;
+      font-size: 16px;
+      padding: 15px;
+      display: block;
+    }
+  }
+}
+.circle{
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  background-color: #00adef;
+  text-align: center;
+  line-height: 120px;
+  font-size: 25px;
+  color: #fff;
+  position: relative;
+  font-weight: bold;
+}
+.security{
+  h3{
+    margin-top: 40px;
+  }
+  hr{
+    margin-bottom: 20px;
+  }
+}
+.mdl-mini-footer{
+  background-color: rgba(66, 66, 66, 0.75);
+  .mdl-logo {
+     text-decoration: none;
+     font-weight: bold;
+     color: #eee;
+ }
+}
