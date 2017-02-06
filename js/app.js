@@ -1,20 +1,22 @@
 var muiApp = angular.module("muiApp",['ngRoute']);
+
 muiApp.factory('Databinding', function(){
-  var title = ' Encrypt your files';
+  var title = 'Muonium : Encrypt your files';
   var bgImage = 'img/bg.jpg';
   return {
     title: function() { return title; },
-    setTitle: function(newTitle) { title = newTitle; },
+    setTitle: function(newTitle) { title = 'Muonium : '+newTitle; },
     bgImage: function () { return bgImage; },
     setBgImage : function (img) { bgImage = img; }
   };
 });
+
 muiApp.controller("muiCtrl", function ($routeParams, $scope, Databinding) {
   $scope.Databinding = Databinding;
   if(window.localStorage.getItem('lang')){
 
   }else{
-      window.localStorage.setItem('lang', 'en');
+    window.localStorage.setItem('lang', 'en');
   }
   $scope.langs = ['en','fr','ru'];
   $scope.lang = window.localStorage.getItem('lang');
@@ -24,30 +26,37 @@ muiApp.controller("muiCtrl", function ($routeParams, $scope, Databinding) {
     location.reload();
   };
 });
+
 muiApp.controller('homeController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('Encrypt your files');
   Databinding.setBgImage('img/bg.jpg');
 });
+
 muiApp.controller('aboutController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('About');
   Databinding.setBgImage('img/bg.jpg');
 });
+
 muiApp.controller('achieveController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('Achievement');
   Databinding.setBgImage('img/bg.jpg');
 });
+
 muiApp.controller('donateController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('Donate');
   Databinding.setBgImage('img/bg.jpg');
 });
+
 muiApp.controller('securityController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('Security');
   Databinding.setBgImage('img/bg.jpg');
 });
+
 muiApp.controller('helpController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('Help');
   Databinding.setBgImage('img/bg.jpg');
 });
+
 muiApp.config(['$locationProvider', '$routeProvider', function config($locationProvider, $routeProvider) {
     $locationProvider.hashPrefix('!');
     $routeProvider.
