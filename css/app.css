@@ -124,7 +124,11 @@ header {
   font-size: 25px;
   color: #fff;
   position: relative;
-  font-weight: bold; }
+  font-weight: bold;
+
+  float:left;
+  margin-right: 20px;
+}
 
 .security h3 {
   margin-top: 40px; }
@@ -137,5 +141,4 @@ header {
     text-decoration: none;
     font-weight: bold;
     color: #eee; }
-
 /*# sourceMappingURL=app.css.map */
