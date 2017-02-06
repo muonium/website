@@ -13,9 +13,9 @@ muiApp.factory('Databinding', function(){
 
 muiApp.controller("muiCtrl", function ($routeParams, $scope, Databinding) {
   $scope.Databinding = Databinding;
-  if(window.localStorage.getItem('lang')){
+  if(window.localStorage.getItem('lang')) {
 
-  }else{
+  } else {
     window.localStorage.setItem('lang', 'en');
   }
   $scope.langs = ['en','fr','ru'];
@@ -89,3 +89,15 @@ muiApp.config(['$locationProvider', '$routeProvider', function config($locationP
       otherwise({redirectTo: '/'});
   }
 ]);
+
+muiApp.directive('menuClose', function() {
+    return {
+        restrict: 'AC',
+        link: function($scope, $element) {
+            $element.bind('click', function() {
+                angular.element(document.querySelector('.mdl-layout__drawer')).removeClass('is-visible');
+                angular.element(document.querySelector('.mdl-layout__obfuscator')).removeClass('is-visible');
+            });
+        }
+    };
+});
