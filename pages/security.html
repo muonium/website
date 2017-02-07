@@ -1,0 +1,31 @@
+<header class="text-center achieve">
+  <h4>{{txt.global.security|uppercase}}</h4>
+  <hr>
+</header>
+
+<div class="features text-center help security">
+  <section>
+    <div class="mdl-grid">
+      <div class="mdl-cell mdl-cell--6-col">
+          <h3 class="text-center">{{txt.security.communicationsEncryption}}</h3>
+          <hr>
+          <p ng-bind-html="txt.security.communicationsEncryptionTxt|unsafe"></p>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+          <h3 class="text-center">{{txt.security.filesEncryption}}</h3>
+          <hr>
+          <p ng-bind-html="txt.security.filesEncryptionTxt|unsafe"></p>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+          <h3 class="text-center">{{txt.security.EELaws}}</h3>
+          <hr>
+          <p>{{txt.security.EELawsTxt}}</p>
+      </div>
+      <div class="mdl-cell mdl-cell--6-col">
+          <h3 class="text-center">{{txt.security.tripleAuth}}</h3>
+          <hr>
+          <p ng-bind-html="txt.security.tripleAuthTxt|unsafe"></p>
+      </div>
+    </div>
+  </section>
+</div>

@@ -11,15 +11,16 @@ muiApp.factory('Databinding', function(){
   };
 });
 
-muiApp.controller("muiCtrl", function ($routeParams, $scope, Databinding) {
+muiApp.controller("muiCtrl", function ($routeParams, $scope, $http, Databinding) {
   $scope.Databinding = Databinding;
   if(window.localStorage.getItem('lang')) {
 
   } else {
     window.localStorage.setItem('lang', 'en');
   }
-  $scope.langs = ['en','fr','ru'];
   $scope.lang = window.localStorage.getItem('lang');
+  $http.get('translations/'+ $scope.lang +'.json').then(function(response) { $scope.txt = response.data; });
+
   $scope.changeLang = function(newLang){
     window.localStorage.setItem('lang', newLang);
     $scope.lang = window.localStorage.getItem('lang');
@@ -62,28 +63,28 @@ muiApp.config(['$locationProvider', '$routeProvider', function config($locationP
     $routeProvider.
       when('/',{
         templateUrl: function(){
-          return 'pages/'+window.localStorage.getItem('lang')+'/home.html';
+          return 'pages/home.html';
         },
         controller: "homeController"
       }).
       when('/about',{
-        templateUrl: "pages/en/about.html",
+        templateUrl: "pages/about.html",
         controller: "aboutController"
       }).
       when('/achievement',{
-        templateUrl: "pages/en/achieve.html",
+        templateUrl: "pages/achieve.html",
         controller: "achieveController"
       }).
       when('/donate',{
-        templateUrl: "pages/en/donate.html",
+        templateUrl: "pages/donate.html",
         controller: "donateController"
       }).
       when('/security',{
-        templateUrl: "pages/en/security.html",
+        templateUrl: "pages/security.html",
         controller: "securityController"
       }).
       when('/help',{
-        templateUrl: "pages/en/help.html",
+        templateUrl: "pages/help.html",
         controller: "helpController"
       }).
       otherwise({redirectTo: '/'});
@@ -99,5 +100,11 @@ muiApp.directive('menuClose', function() {
                 angular.element(document.querySelector('.mdl-layout__obfuscator')).removeClass('is-visible');
             });
         }
+    };
+});
+
+muiApp.filter('unsafe', function($sce) {
+    return function(val) {
+        return $sce.trustAsHtml(val);
     };
 });
