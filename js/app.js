@@ -19,7 +19,7 @@ muiApp.controller("muiCtrl", function ($routeParams, $scope, $http, Databinding)
     window.localStorage.setItem('lang', 'en');
   }
   $scope.lang = window.localStorage.getItem('lang');
-  $http.get('translations/'+ $scope.lang +'.json').then(function(response) { $scope.txt = response.data; });
+  $http.get('translations/website/'+ $scope.lang +'.json').then(function(response) { $scope.txt = response.data; });
 
   $scope.changeLang = function(newLang){
     window.localStorage.setItem('lang', newLang);
