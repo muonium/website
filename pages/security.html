@@ -19,7 +19,7 @@
       <div class="mdl-cell mdl-cell--6-col">
           <h3 class="text-center">{{txt.security.EELaws}}</h3>
           <hr>
-          <p>{{txt.security.EELawsTxt}}</p>
+          <p ng-bind-html="txt.security.EELawsTxt|unsafe"></p>
       </div>
       <div class="mdl-cell mdl-cell--6-col">
           <h3 class="text-center">{{txt.security.tripleAuth}}</h3>
