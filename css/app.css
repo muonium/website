@@ -11,13 +11,11 @@ hr {
     color: white; }
 
 .mdl-layout__header--transparent.mdl-layout__header--transparent, header {
-  background: rgba(51, 153, 54, 0.5);
-}
+  background: rgba(51, 153, 54, 0.5); }
 
 .mdl-layout__content {
     overflow-y: visible;
-    overflow-x: visible;
-}
+    overflow-x: visible; }
 
 .mdl-layout__drawer select {
   background-color: transparent;
@@ -133,8 +131,7 @@ header {
   font-weight: bold;
 
   float:left;
-  margin-right: 20px;
-}
+  margin-right: 20px; }
 
 .security h3 {
   margin-top: 40px; }
