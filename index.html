@@ -7,17 +7,19 @@
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="description" content="Muonium est un projet permettant le stockage sécurisé de vos fichiers en ligne et de permettre ensuite leur gestion" />
   	<meta name="keywords" content="fichiers, fichiers en ligne, facile, muonium, chiffrement, stockage, fichiers, cloud, secure, muonium,
-                       	encrypt, decrypt, kantum, technologies, kantum technologies,
-                          stockage cloud, cloud chiffré, secure cloud, encrypted cloud, stockage en ligne, stockage sécurisé,
-                          chiffré, private drive, private cloud, files, storage, files storage" />
-  	<meta name="robots" content="index, follow" />
-    <script type="application/ld+json">  {
-                                '@context' : 'http://schema.org',
-                                '@type' : 'Organization',
-                                'name' : 'Muonium',
-                                'url' : 'https://www.muonium.ch',
-                                'sameAs' : [ 'https://www.facebook.com/muoniumcloud/' ]
-                            } </script>
+          encrypt, decrypt, kantum, technologies, kantum technologies,
+          stockage cloud, cloud chiffré, secure cloud, encrypted cloud, stockage en ligne, stockage sécurisé,
+          chiffré, private drive, private cloud, files, storage, files storage">
+  	<meta name="robots" content="index, follow">
+    <script type="application/ld+json"> 
+      {
+        '@context' : 'http://schema.org',
+        '@type' : 'Organization',
+        'name' : 'Muonium',
+        'url' : 'https://www.muonium.ch',
+        'sameAs' : [ 'https://www.facebook.com/muoniumcloud/' ]
+      }
+    </script>
     <style>
         @-ms-viewport { width: 100vw ; min-zoom: 100% ; zoom: 100% ; }  @viewport { width: 100vw ; min-zoom: 100% zoom: 100% ; }
         @-ms-viewport { user-zoom: fixed ; min-zoom: 100% ; }           @viewport { user-zoom: fixed ; min-zoom: 100% ; }
@@ -30,31 +32,31 @@
   </head>
   <body ng-cloak>
     <div class="mui-layout mdl-layout mdl-js-layout" style="background-image: url({{ Databinding.bgImage() }})">
-    <header class="mdl-layout__header mdl-layout__header--transparent">
-      <div class="mdl-layout__header-row">
-        <!-- Title -->
-        <span class="mdl-layout-title">Muonium</span>
-        <!-- Add spacer, to align navigation to the right -->
-        <div class="mdl-layout-spacer"></div>
-        <!-- Navigation -->
-        <nav class="mdl-navigation">
-          <a class="mdl-navigation__link" href="#!/">Home</a>
-          <a class="mdl-navigation__link" href="#!/about">{{txt.global.about}}</a>
-          <a class="mdl-navigation__link" href="#!/achievement">{{txt.global.adventure}}</a>
-          <a class="mdl-navigation__link" href="#!/security">{{txt.global.security}}</a>
-          <a class="mdl-navigation__link" href="https://muonium.wordpress.com/">{{txt.global.blog}}</a>
-          <a class="mdl-navigation__link" href="#!/donate">{{txt.global.donate}}</a>
-          <a class="mdl-navigation__link" href="#!/help">{{txt.global.help}}</a>
-          <select ng-model="lang" ng-change="changeLang(lang)" >
-            <option value="en">En</option>
-            <option value="es">Es</option>
-            <option value="fr">Fr</option>
-            <option value="it">It</option>
-          </select>
-        </nav>
-      </div>
-    </header>
-    <div class="mdl-layout__drawer">
+      <header class="mdl-layout__header mdl-layout__header--transparent">
+        <div class="mdl-layout__header-row">
+          <!-- Title -->
+          <span class="mdl-layout-title">Muonium</span>
+          <!-- Add spacer, to align navigation to the right -->
+          <div class="mdl-layout-spacer"></div>
+          <!-- Navigation -->
+          <nav class="mdl-navigation">
+            <a class="mdl-navigation__link" href="#!/">Home</a>
+            <a class="mdl-navigation__link" href="#!/about">{{txt.global.about}}</a>
+            <a class="mdl-navigation__link" href="#!/achievement">{{txt.global.adventure}}</a>
+            <a class="mdl-navigation__link" href="#!/security">{{txt.global.security}}</a>
+            <a class="mdl-navigation__link" href="https://muonium.wordpress.com/">{{txt.global.blog}}</a>
+            <a class="mdl-navigation__link" href="#!/donate">{{txt.global.donate}}</a>
+            <a class="mdl-navigation__link" href="#!/help">{{txt.global.help}}</a>
+            <select ng-model="lang" ng-change="changeLang(lang)">
+              <option value="en">En</option>
+              <option value="es">Es</option>
+              <option value="fr">Fr</option>
+              <option value="it">It</option>
+            </select>
+          </nav>
+        </div>
+      </header>
+      <div class="mdl-layout__drawer">
         <span class="mdl-layout-title">Muonium</span>
         <nav class="mdl-navigation">
           <a class="mdl-navigation__link" href="#!/" menu-close>Home</a>
@@ -71,21 +73,21 @@
             <option value="it">It</option>
           </select>
         </nav>
+      </div>
+      <main class="mdl-layout__content">
+        <div class="page-content" ng-view></div>
+        <footer class="mdl-mini-footer">
+          <div class="mdl-mini-footer__left-section">
+            <a href="#!/" class="mdl-logo">Kantum Technologies</a>
+            <ul class="mdl-mini-footer__link-list">
+              <li><a target="_blank" href="https://plus.google.com/u/0/b/113792890240805745979/113792890240805745979/posts"><span class="fa fa-google-plus"></span></a></li>
+              <li><a target="_blank" href="https://www.facebook.com/muoniumcloud/"><span class="fa fa-facebook"></span></a></li>
+              <li><a target="_blank" href="https://twitter.com/MuoniumCloud"><span class="fa fa-twitter"></span></a></li>
+            </ul>
+          </div>
+        </footer>
+      </main>
     </div>
-  <main class="mdl-layout__content">
-    <div class="page-content" ng-view></div>
-    <footer class="mdl-mini-footer">
-    <div class="mdl-mini-footer__left-section">
-      <a href="#!/" class="mdl-logo">Kantum Technologies</a>
-      <ul class="mdl-mini-footer__link-list">
-        <li><a target="_blank" href="https://plus.google.com/u/0/b/113792890240805745979/113792890240805745979/posts"><span class="fa fa-google-plus"></span></a></li>
-        <li><a target="_blank" href="https://www.facebook.com/muoniumcloud/"><span class="fa fa-facebook"></span></a></li>
-        <li><a target="_blank" href="https://twitter.com/MuoniumCloud"><span class="fa fa-twitter"></span></a></li>
-      </ul>
-    </div>
-  </footer>
-  </main>
-  </div>
   </body>
   <script src="node_modules/angular/angular.min.js"></script>
   <script src="node_modules/angular-route/angular-route.min.js"></script>
