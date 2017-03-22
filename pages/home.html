@@ -38,7 +38,7 @@
       <div class="mdl-cell mdl-cell--4-col">
         <img src="img/opensource.png" alt="OpenSource">
         <b>{{txt.home.openSource}}</b>
-        <p>{{txt.home.openSourceTxt}}</p>
+        <p ng-bind-html="txt.home.openSourceTxt|unsafe"></p>
       </div>
       <div class="mdl-cell mdl-cell--4-col">
         <img src="img/anonymous.svg" alt="Anonymity">
