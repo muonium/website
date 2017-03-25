@@ -13,11 +13,11 @@ muiApp.factory('Databinding', function(){
 
 muiApp.controller("muiCtrl", function ($routeParams, $scope, $http, Databinding) {
   $scope.Databinding = Databinding;
-  if(window.localStorage.getItem('lang')) {
-
-  } else {
-    window.localStorage.setItem('lang', 'en');
-  }
+  if(!window.localStorage.getItem('lang')) {
+    var lg = navigator.language;
+    lg = lg.substr(0,2);
+    window.localStorage.setItem('lang', lg);
+}
   $scope.lang = window.localStorage.getItem('lang');
   $http.get('translations/website/'+ $scope.lang +'.json').then(function(response) { $scope.txt = response.data; });
 
