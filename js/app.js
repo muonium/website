@@ -19,8 +19,7 @@ muiApp.controller("muiCtrl", function ($routeParams, $scope, $http, Databinding)
     window.localStorage.setItem('lang', lg);
 }
   $scope.lang = window.localStorage.getItem('lang');
-  $http.get('translations/website/'+ $scope.lang +'.json').then(function(response) { $scope.txt = response.data; });
-
+  $http.get('translations/website/'+ $scope.lang +'.json').then(function(response) { $scope.txt = response.data; },function errorCallback(response){window.localStorage.setItem("lang", "en");});
   $scope.changeLang = function(newLang){
     window.localStorage.setItem('lang', newLang);
     $scope.lang = window.localStorage.getItem('lang');
