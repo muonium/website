@@ -29,7 +29,7 @@ muiApp.controller("muiCtrl", function ($routeParams, $scope, $http, Databinding)
 
 muiApp.controller('homeController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('Encrypt your files');
-  Databinding.setBgImage('img/bg.jpg');
+  Databinding.setBgImage('img/homeBg.png');
 });
 
 muiApp.controller('aboutController', function ($routeParams, $scope,$http,Databinding) {
