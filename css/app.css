@@ -5,13 +5,11 @@ hr {
   text-align: center; }
 
 .mui-layout {
-  background-position: center;
-  background-size: cover; }
+  background-position: center -120px;
+  background-size: cover;
+  background-repeat: no-repeat; }
   .mui-layout .mdl-layout__header, .mui-layout .mdl-layout__drawer-button {
     color: white; }
-
-.mdl-layout__header--transparent.mdl-layout__header--transparent, header {
-  background: rgba(51, 153, 54, 0.5); }
 
 .mdl-layout__drawer select {
   background-color: transparent;
@@ -35,9 +33,7 @@ header {
     margin: auto 35px; }
   header h3 {
     font-size: 7em;
-    line-height: 100px;
     font-weight: bolder;
-    padding: 50px;
     color: #fff; }
   header hr {
     width: 40px;
@@ -89,13 +85,15 @@ header {
     font-weight: bold;
     font-size: 19px; }
 
-.achieve hr {
-  margin-top: 0px;
-  border-top-color: red; }
-.achieve h4 {
-  font-weight: bold;
-  font-size: 2em;
-  color: #000; }
+.achieve {
+  padding: 285px; }
+  .achieve hr {
+    margin-top: 0px;
+    border-top-color: red; }
+  .achieve h4 {
+    font-weight: bold;
+    font-size: 5em;
+    color: #000; }
 
 .help p {
   font-size: 19px; }

@@ -34,27 +34,27 @@ muiApp.controller('homeController', function ($routeParams, $scope,$http,Databin
 
 muiApp.controller('aboutController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('About');
-  Databinding.setBgImage('img/bg.jpg');
+  Databinding.setBgImage('img/aboutBg.png');
 });
 
 muiApp.controller('achieveController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('Achievement');
-  Databinding.setBgImage('img/bg.jpg');
+  Databinding.setBgImage('img/achieveBg.png');
 });
 
 muiApp.controller('donateController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('Donate');
-  Databinding.setBgImage('img/bg.jpg');
+  Databinding.setBgImage('img/donateBg.png');
 });
 
 muiApp.controller('securityController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('Security');
-  Databinding.setBgImage('img/bg.jpg');
+  Databinding.setBgImage('img/securityBg.png');
 });
 
 muiApp.controller('helpController', function ($routeParams, $scope,$http,Databinding) {
   Databinding.setTitle('Help');
-  Databinding.setBgImage('img/bg.jpg');
+  Databinding.setBgImage('img/helpBg.png');
 });
 
 muiApp.config(['$locationProvider', '$routeProvider', function config($locationProvider, $routeProvider) {
