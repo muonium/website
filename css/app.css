@@ -129,11 +129,20 @@ header {
 .security hr {
   margin-bottom: 20px; }
 
-.mdl-mini-footer {
-  background-color: rgba(66, 66, 66, 0.75); }
-  .mdl-mini-footer .mdl-logo {
-    text-decoration: none;
-    font-weight: bold;
-    color: #eee; }
+.mdl-mega-footer {
+  background-color: #424242; }
+  .mdl-mega-footer p {
+    width: 75%; }
+    .mdl-mega-footer p a {
+      color: inherit;
+      padding: 10px; }
+    .mdl-mega-footer p a:hover, .mdl-mega-footer p a:active {
+      color: inherit; }
+  .mdl-mega-footer .mdl-mega-footer__bottom-section {
+    width: 50%;
+    margin: 0 auto;
+    text-align: center; }
+  .mdl-mega-footer .mdl-logo img {
+    width: 120px; }
 
 /*# sourceMappingURL=app.css.map */

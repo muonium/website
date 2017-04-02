@@ -78,14 +78,50 @@
       </div>
       <main class="mdl-layout__content">
         <div class="page-content" ng-view></div>
-        <footer class="mdl-mini-footer">
-          <div class="mdl-mini-footer__left-section">
-            <a href="#!/" class="mdl-logo">Kantum Technologies</a>
-            <ul class="mdl-mini-footer__link-list">
-              <li><a target="_blank" href="https://plus.google.com/u/0/b/113792890240805745979/113792890240805745979/posts"><span class="fa fa-google-plus"></span></a></li>
-              <li><a target="_blank" href="https://www.facebook.com/muoniumcloud/"><span class="fa fa-facebook"></span></a></li>
-              <li><a target="_blank" href="https://twitter.com/MuoniumCloud"><span class="fa fa-twitter"></span></a></li>
-            </ul>
+        <footer class="mdl-mega-footer">
+          <div class="mdl-mega-footer__middle-section">
+
+            <div class="mdl-mega-footer__drop-down-section">
+              <h1 class="mdl-mega-footer__heading"><a href="#!/" class="mdl-logo"><img src="img/w-247x57.png" alt="Muonium Logo"></a></h1>
+              <p>Why should we accept that we wouldn't accept in our daily life ?</p>
+              <p>
+                <a target="_blank" href="https://plus.google.com/u/0/b/113792890240805745979/113792890240805745979/posts"><span class="fa fa-google-plus"></span></a>
+                <a target="_blank" href="https://www.facebook.com/muoniumcloud/"><span class="fa fa-facebook"></span></a>
+                <a target="_blank" href="https://twitter.com/MuoniumCloud"><span class="fa fa-twitter"></span></a>
+              </p>
+            </div>
+
+            <div class="mdl-mega-footer__drop-down-section">
+              <h1 class="mdl-mega-footer__heading">Contact Info.</h1>
+              <p>
+                <a href="mailto:support@muonium.ch">support@muonium.ch</a>
+              </p>
+            </div>
+
+            <div class="mdl-mega-footer__drop-down-section">
+              <h1 class="mdl-mega-footer__heading">Quick Links</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <!--TODO-->
+                <li><a href="#!/about" menu-close>{{txt.global.about}}</a></li>
+                <li><a href="#!/achievement" menu-close>{{txt.global.adventure}}</a></li>
+                <li><a href="#!/security" menu-close>{{txt.global.security}}</a></li>
+                <li><a href="https://muonium.wordpress.com/" menu-close>{{txt.global.blog}}</a></li>
+                <li><a href="#!/donate" menu-close>{{txt.global.donate}}</a></li>
+                <li><a href="#!/help" menu-close>{{txt.global.help}}</a></li>
+              </ul>
+            </div>
+
+            <div class="mdl-mega-footer__drop-down-section">
+              <h1 class="mdl-mega-footer__heading">Support</h1>
+              <ul class="mdl-mega-footer__link-list">
+                <!--TODO-->
+                <li><a href="#">Contact us</a></li>
+              </ul>
+            </div>
+
+            <div class="mdl-mega-footer__bottom-section">
+              <div>Copyright &copy; Muonium 2017 , All right researved </div>
+            </div>
           </div>
         </footer>
       </main>

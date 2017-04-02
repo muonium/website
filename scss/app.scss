@@ -169,11 +169,26 @@ header{
     margin-bottom: 20px;
   }
 }
-.mdl-mini-footer{
-  background-color: rgba(66, 66, 66, 0.75);
+.mdl-mega-footer{
+  background-color: rgba(66, 66, 66,1);
+  p{
+    width: 75%;
+    a{
+      color: inherit;
+      padding: 10px;
+    }
+    a:hover, a:active{
+      color: inherit;
+    }
+  }
+  .mdl-mega-footer__bottom-section{
+    width: 50%;
+    margin: 0 auto;
+    text-align: center;
+  }
   .mdl-logo {
-     text-decoration: none;
-     font-weight: bold;
-     color: #eee;
+    img{
+      width: 120px;
+    }
  }
 }
