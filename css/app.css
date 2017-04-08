@@ -11,7 +11,13 @@ hr {
     color: white; }
 
 .mdl-layout__header--transparent.mdl-layout__header--transparent, header {
-  background: rgba(51, 153, 54, 0.5); }
+  background: rgba(51, 153, 54, 0.5);
+}
+
+.mdl-layout__content {
+    overflow-y: visible;
+    overflow-x: visible;
+}
 
 .mdl-layout__drawer select {
   background-color: transparent;
@@ -124,7 +130,11 @@ header {
   font-size: 25px;
   color: #fff;
   position: relative;
-  font-weight: bold; }
+  font-weight: bold;
+
+  float:left;
+  margin-right: 20px;
+}
 
 .security h3 {
   margin-top: 40px; }
@@ -138,4 +148,7 @@ header {
     font-weight: bold;
     color: #eee; }
 
+[ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+  display: none !important;
+}
 /*# sourceMappingURL=app.css.map */
