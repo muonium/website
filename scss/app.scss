@@ -32,7 +32,11 @@ header{
   select{
     background-color: transparent;
     border: none;
-    font-weight: bold;
+    font-weight: 100;
+    color: #fff;
+  }
+  select:active{
+    color: #000;
   }
   p{
     font-weight: bold;
@@ -95,19 +99,31 @@ header{
   }
 }
 .team{
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: rgba(255, 255, 255, 1);
   color: #000;
   .mdl-grid{
     .mdl-cell{
+      background: rgba(238, 238, 238, 0.46);
+      margin-top: 55px;
+      text-align: center;
       hr{
-          margin: 15px 0;
+          margin: 15px auto;
       }
     }
     img{
+      margin: 0 auto;
+      display: block;
+      float: none;
       width: 100px;
-      padding: 0px 10px;
+      padding: 20px 10px;
       border-radius: 25px;
+      border-radius: 50%;
+      position: relative;
+      top: -95px;
     }
+  }
+  p.role{
+    color: #16c1f3;
   }
   .role{
     font-weight: bold;
@@ -127,6 +143,11 @@ header{
   }
 }
 .help{
+  .mdl-grid{
+      .mdl-cell{
+        text-align: center;
+      }
+  }
   p{
     font-size: 19px;
   }
@@ -136,6 +157,13 @@ header{
   margin-top: -35px;
   padding: 80px 0px;
   .mdl-cell{
+    text-align: left;
+    .donate-section{
+      width: 50%;
+      margin: 0px auto;
+      text-align: center;
+      padding: 20px;
+    }
     img{
       width: 100px;
       display: block;
@@ -150,16 +178,21 @@ header{
   }
 }
 .circle{
+  margin: 0 auto;
+  border: 2px solid #0ee;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #00adef;
+  background-color: transparent;
   text-align: center;
   line-height: 120px;
   font-size: 25px;
-  color: #fff;
+  color: #000;
   position: relative;
   font-weight: bold;
+}
+.circle.empty{
+  border-color: #fff;
 }
 .security{
   h3{

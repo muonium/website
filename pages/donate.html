@@ -1,10 +1,13 @@
 <header class="text-center achieve">
 </header>
 
-<div class="text-center donate">
+<div class="features text-center donate">
+  <h3>{{txt.global.donate|uppercase}}</h3>
+  <hr>
   <section>
     <div class="mdl-grid">
-      <div class="mdl-cell mdl-cell--4-col text-center">
+      <div class="mdl-cell mdl-cell--12-col text-center">
+        <div class="donate-section">
         <img src="img/server.svg" alt="donate to server">
         <span>{{txt.donate.serverFinancing}}</span>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -12,8 +15,10 @@
           <input type="hidden" name="hosted_button_id" value="FFEGL5WHW4YWQ">
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         </form>
+        </div>
       </div>
-      <div class="mdl-cell mdl-cell--4-col text-center">
+      <div class="mdl-cell mdl-cell--12-col text-center">
+        <div class="donate-section">
         <img src="img/team.svg" alt="donate to team">
         <span>{{txt.donate.teamFinancing}}</span>
         <span>BTC : 1GxpepD3PzJ99S9nMboRbgHeG6ckzZHWJ</span>
@@ -22,8 +27,10 @@
           <input type="hidden" name="hosted_button_id" value="UULPTNF33P3EC">
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         </form>
+        </div>
       </div>
-      <div class="mdl-cell mdl-cell--4-col text-center">
+      <div class="mdl-cell mdl-cell--12-col text-center">
+        <div class="donate-section">
         <img src="img/conference.svg" alt="donate to conference">
         <span>{{txt.donate.conferenceFinancing}}</span>
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
@@ -31,7 +38,8 @@
           <input type="hidden" name="hosted_button_id" value="93P5MY2H7RESL">
           <input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
         </form>
-      </div>
+        </div>
+    </div>
     </div>
   </section>
 </div>

@@ -25,7 +25,10 @@ header {
   header select {
     background-color: transparent;
     border: none;
-    font-weight: bold; }
+    font-weight: 100;
+    color: #fff; }
+  header select:active {
+    color: #000; }
   header p {
     font-weight: bold;
     font-size: 20px; }
@@ -73,14 +76,26 @@ header {
     padding: 5px 10px; }
 
 .team {
-  background-color: rgba(255, 255, 255, 0.95);
+  background-color: white;
   color: #000; }
-  .team .mdl-grid .mdl-cell hr {
-    margin: 15px 0; }
+  .team .mdl-grid .mdl-cell {
+    background: rgba(238, 238, 238, 0.46);
+    margin-top: 55px;
+    text-align: center; }
+    .team .mdl-grid .mdl-cell hr {
+      margin: 15px auto; }
   .team .mdl-grid img {
+    margin: 0 auto;
+    display: block;
+    float: none;
     width: 100px;
-    padding: 0px 10px;
-    border-radius: 25px; }
+    padding: 20px 10px;
+    border-radius: 25px;
+    border-radius: 50%;
+    position: relative;
+    top: -95px; }
+  .team p.role {
+    color: #16c1f3; }
   .team .role {
     font-weight: bold;
     font-size: 19px; }
@@ -95,6 +110,8 @@ header {
     font-size: 5em;
     color: #000; }
 
+.help .mdl-grid .mdl-cell {
+  text-align: center; }
 .help p {
   font-size: 19px; }
 
@@ -102,27 +119,39 @@ header {
   background-color: #fff;
   margin-top: -35px;
   padding: 80px 0px; }
-  .donate .mdl-cell img {
-    width: 100px;
-    display: block;
-    margin: 0 auto; }
-  .donate .mdl-cell span {
-    font-weight: bold;
-    font-size: 16px;
-    padding: 15px;
-    display: block; }
+  .donate .mdl-cell {
+    text-align: left; }
+    .donate .mdl-cell .donate-section {
+      width: 50%;
+      margin: 0px auto;
+      text-align: center;
+      padding: 20px; }
+    .donate .mdl-cell img {
+      width: 100px;
+      display: block;
+      margin: 0 auto; }
+    .donate .mdl-cell span {
+      font-weight: bold;
+      font-size: 16px;
+      padding: 15px;
+      display: block; }
 
 .circle {
+  margin: 0 auto;
+  border: 2px solid #0ee;
   width: 120px;
   height: 120px;
   border-radius: 50%;
-  background-color: #00adef;
+  background-color: transparent;
   text-align: center;
   line-height: 120px;
   font-size: 25px;
-  color: #fff;
+  color: #000;
   position: relative;
   font-weight: bold; }
+
+.circle.empty {
+  border-color: #fff; }
 
 .security h3 {
   margin-top: 40px; }
