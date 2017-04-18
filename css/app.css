@@ -77,7 +77,9 @@ header {
 
 .team {
   background-color: white;
-  color: #000; }
+  color: #000;
+  width: 80%;
+  padding: 0px 10%; }
   .team .mdl-grid .mdl-cell {
     background: rgba(238, 238, 238, 0.46);
     margin-top: 55px;
