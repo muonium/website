@@ -4,57 +4,63 @@ muiApp.factory('Databinding', function(){
     var title = 'Muonium : Encrypt your files';
     var bgImage = 'img/bg.jpg';
     return {
-        title: function() { return title; },
-        setTitle: function(newTitle) { title = 'Muonium : '+newTitle; },
-        bgImage: function () { return bgImage; },
-        setBgImage : function (img) { bgImage = img; }
+        getTitle: function() { return title; },
+        setTitle: function(newTitle) { title = 'Muonium : '+newTitle; }
     };
 });
 
 muiApp.controller("muiCtrl", function ($routeParams, $scope, $http, Databinding) {
     $scope.Databinding = Databinding;
+    $scope.title = 'home';
     if(!window.localStorage.getItem('lang')) {
         var lg = navigator.language;
         lg = lg.substr(0,2);
         window.localStorage.setItem('lang', lg);
     }
     $scope.lang = window.localStorage.getItem('lang');
-    $http.get('translations/website/'+ $scope.lang +'.json').then(function(response) { $scope.txt = response.data; },function errorCallback(response){window.localStorage.setItem("lang", "en");});
+
     $scope.changeLang = function(newLang){
         window.localStorage.setItem('lang', newLang);
         $scope.lang = window.localStorage.getItem('lang');
         location.reload();
     };
+
+    $http.get('translations/website/'+ $scope.lang +'.json').then(
+        function(response) {
+            $scope.txt = response.data;
+            Databinding.setTitle($scope.txt.global[$scope.title]);
+        }
+    );
 });
 
 muiApp.controller('homeController', function ($routeParams, $scope,$http,Databinding) {
-    Databinding.setTitle($scope.txt.global.home);
-    Databinding.setBgImage('img/bg.jpg');
+    $scope.title = 'home';
+    if(typeof $scope.txt !== 'undefined') Databinding.setTitle($scope.txt.global[$scope.title]);
 });
 
 muiApp.controller('aboutController', function ($routeParams, $scope,$http,Databinding) {
-    Databinding.setTitle($scope.txt.global.about);
-    Databinding.setBgImage('img/bg.jpg');
+    $scope.title = 'about';
+    if(typeof $scope.txt !== 'undefined') Databinding.setTitle($scope.txt.global[$scope.title]);
 });
 
 muiApp.controller('achieveController', function ($routeParams, $scope,$http,Databinding) {
-    Databinding.setTitle($scope.txt.global.adventure);
-    Databinding.setBgImage('img/bg.jpg');
+    $scope.title = 'adventure';
+    if(typeof $scope.txt !== 'undefined') Databinding.setTitle($scope.txt.global[$scope.title]);
 });
 
 muiApp.controller('donateController', function ($routeParams, $scope,$http,Databinding) {
-    Databinding.setTitle($scope.txt.global.donate);
-    Databinding.setBgImage('img/bg.jpg');
+    $scope.title = 'donate';
+    if(typeof $scope.txt !== 'undefined') Databinding.setTitle($scope.txt.global[$scope.title]);
 });
 
 muiApp.controller('securityController', function ($routeParams, $scope,$http,Databinding) {
-    Databinding.setTitle($scope.txt.global.security);
-    Databinding.setBgImage('img/bg.jpg');
+    $scope.title = 'security';
+    if(typeof $scope.txt !== 'undefined') Databinding.setTitle($scope.txt.global[$scope.title]);
 });
 
 muiApp.controller('helpController', function ($routeParams, $scope,$http,Databinding) {
-    Databinding.setTitle($scope.txt.global.help);
-    Databinding.setBgImage('img/bg.jpg');
+    $scope.title = 'help';
+    if(typeof $scope.txt !== 'undefined') Databinding.setTitle($scope.txt.global[$scope.title]);
 });
 
 muiApp.config(['$locationProvider', '$routeProvider', function config($locationProvider, $routeProvider) {

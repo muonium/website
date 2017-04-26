@@ -2,7 +2,7 @@
 <html ng-app="muiApp" ng-controller="muiCtrl">
   <head>
     <meta charset="utf-8">
-    <title ng-bind='Databinding.title()'>Muonium : Encrypt your files</title>
+    <title ng-bind='Databinding.getTitle()'>Muonium : Encrypt your files</title>
     <meta name="viewport" content="width=device-width, minimum-scale=1, initial-scale=1, user-scalable=no">
     <link rel="shortcut icon" href="favicon.ico">
     <meta name="description" content="Muonium est un projet permettant le stockage sécurisé de vos fichiers en ligne et de permettre ensuite leur gestion" />
@@ -31,7 +31,7 @@
     <link href="css/app.css" rel="stylesheet">
   </head>
   <body ng-cloak>
-    <div class="mui-layout mdl-layout mdl-js-layout" style="background-image: url({{ Databinding.bgImage() }})">
+    <div class="mui-layout mdl-layout mdl-js-layout" style="background-image: url('img/bg.jpg')">
       <header class="mdl-layout__header mdl-layout__header--transparent">
         <div class="mdl-layout__header-row">
           <!-- Title -->
