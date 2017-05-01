@@ -1,5 +1,14 @@
 var muiApp = angular.module("muiApp",['ngRoute']);
-
+muiApp.run(function($rootScope, $window) {
+  $rootScope.$on('$routeChangeSuccess', function () {
+    var interval = setInterval(function(){
+      if (document.readyState == 'complete') {
+        document.getElementsByClassName('mdl-layout__content')[0].scrollTop = 0;
+        clearInterval(interval);
+      }
+    }, 200);
+  });
+});
 muiApp.factory('Databinding', function(){
   var title = 'Muonium : Encrypt your files';
   var bgImage = 'img/bg.jpg';

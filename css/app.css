@@ -82,20 +82,20 @@ header {
   padding: 0px 10%; }
   .team .mdl-grid .mdl-cell {
     background: rgba(238, 238, 238, 0.46);
-    margin-top: 55px;
+    margin-top: 65px;
     text-align: center; }
     .team .mdl-grid .mdl-cell hr {
       margin: 15px auto; }
   .team .mdl-grid img {
-    margin: 0 auto;
+    margin: -25px auto;
     display: block;
     float: none;
     width: 100px;
-    padding: 20px 10px;
-    border-radius: 25px;
+    height: 100px;
+    padding: 0px 0px;
     border-radius: 50%;
     position: relative;
-    top: -95px; }
+    top: -50px; }
   .team p.role {
     color: #16c1f3; }
   .team .role {
