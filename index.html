@@ -16,7 +16,7 @@
         '@context' : 'http://schema.org',
         '@type' : 'Organization',
         'name' : 'Muonium',
-        'url' : 'https://www.muonium.ch',
+        'url' : 'https://muonium.io',
         'sameAs' : [ 'https://www.facebook.com/muoniumcloud/' ]
       }
     </script>
@@ -49,13 +49,14 @@
             <a class="mdl-navigation__link" href="#!/help">{{txt.global.help}}</a>
             <a class="mdl-navigation__link" href="https://framavox.org/g/KgLMT6H2/muonium" target="_blank">{{txt.global.vote}}</a>
             <select ng-model="lang" ng-change="changeLang(lang)">
-              <option value="en">English</option>
-              <option value="es">Español</option>
-              <option value="fr">Français</option>
-              <option value="it">Italiano</option>
-              <option value="de">Deutsch</option>
-              <option value="ru">Pусский</option>
-              <option value="et">Eesti</option>
+				<option value="en">English</option>
+    			<option value="de">Deutsch</option>
+    			<option value="et">Eesti</option>
+                <option value="es">Español</option>
+                <option value="fr">Français</option>
+                <option value="it">Italiano</option>
+    			<option value="pl">Polskie</option>
+                <option value="ru">Pусский</option>
             </select>
           </nav>
         </div>
@@ -73,12 +74,13 @@
           <a class="mdl-navigation__link" href="https://framavox.org/g/KgLMT6H2/muonium" target="_blank">{{txt.global.vote}}</a>
           <select ng-model="lang" ng-change="changeLang(lang)">
          	<option value="en">English</option>
+			<option value="de">Deutsch</option>
+			<option value="et">Eesti</option>
             <option value="es">Español</option>
             <option value="fr">Français</option>
             <option value="it">Italiano</option>
-            <option value="de">Deutsch</option>
+			<option value="pl">Polskie</option>
             <option value="ru">Pусский</option>
-            <option value="et">Eesti</option>
           </select>
         </nav>
       </div>
